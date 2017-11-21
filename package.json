@@ -1,0 +1,23 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "A simple express js app",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon lib/main.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist",
+    "serve": "node dist/main.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "author": "Slobodan Tonchevski",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1",
+	"babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-register": "^6.11.6",
+    "mocha": "^3.0.1"
+  }
+}
